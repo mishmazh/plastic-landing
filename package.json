@@ -1,0 +1,38 @@
+{
+  "name": "plastic-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=development&&webpack serve",
+    "build:dev": "set NODE_ENV=development&&webpack",
+    "build:prod": "set NODE_ENV=production&&webpack",
+    "clean": "rd /s /q dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xofyerg/plastic-landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xofyerg/plastic-landing/issues"
+  },
+  "homepage": "https://github.com/xofyerg/plastic-landing#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-loader": "^4.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "sass": "^1.54.4",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0"
+  }
+}
