@@ -1,5 +1,50 @@
-@import "~bootstrap/scss/bootstrap.scss";
 @import "./scss/abstracts";
+
+// ---------- custom ---------- //
+
+$gray-100: #f8f8f8;
+$gray-200: #ececec;
+$gray-300: #e1e1e1;
+$gray-400: #cecece;
+$gray-500: #aaaaaa;
+$gray-600: #88888c;
+$gray-700: #5f5e62;
+$gray-800: #3f3f41;
+$gray-900: #2a292d;
+
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900,
+);
+
+$crayola: #25ab6e;
+$amaranth: #af2e4e;
+
+$colors: (
+  "crayola": $crayola,
+  "amaranth": $amaranth,
+);
+
+$secondary: #6c757d;
+$light: #f8f9fa;
+$dark: #343a40;
+
+$theme-colors: (
+  "secondary": $secondary,
+  "light": $light,
+  "dark": $dark,
+  "crayola": $crayola,
+  "amaranth": $amaranth,
+);
+
+@import "~bootstrap/scss/bootstrap.scss";
 
 .display-1 {
   @include text-size-family(72px, 78px, $roboto-bold);
@@ -15,7 +60,7 @@
 }
 
 h1 {
-  @include text-size-family(42px, 48px, $roboto-medium)
+  @include text-size-family(42px, 48px, $roboto-medium);
 }
 h2 {
   @include text-size-family(36px, 42px, $roboto-medium);
@@ -41,4 +86,50 @@ h6 {
 }
 .text-sm {
   @include text-size-family(13px, 18px, $roboto-regular);
+}
+
+.btn {
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.btn-lg {
+  @include text-size-family(14px, 22px, $roboto-medium);
+  padding: 18px 36px;
+}
+
+.btn-sm {
+  @include text-size-family(13px, 18px, $roboto-bold);
+  padding: 14px 28px;
+}
+
+.input-group {
+  border-radius: 10px;
+  border: 1px solid $gray-300;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $crayola;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    border-color: $crayola;
+  }
+}
+
+.input-lg {
+  @include text-size-family(14px, 22px, $roboto-regular);
+  padding: 12px 12px;
+}
+.input-base {
+  @include text-size-family(13px, 18px, $roboto-regular);
+}
+.input-sm {
+  @include text-size-family(13px, 18px, $roboto-regular);
+}
+
+::placeholder {
+  color: $gray-400;
 }
