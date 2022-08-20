@@ -1,44 +1,44 @@
 @import "~bootstrap/scss/bootstrap.scss";
-@import "../scss/main.scss";
+@import "./scss/abstracts";
 
 .display-1 {
-  @include font-line-family(72px, 78px, $roboto-bold);
+  @include text-size-family(72px, 78px, $roboto-bold);
 }
 .display-2 {
-  @include font-line-family(60px, 66px, $roboto-bold);
+  @include text-size-family(60px, 66px, $roboto-bold);
 }
 .display-3 {
-  @include font-line-family(54px, 60px, $roboto-bold);
+  @include text-size-family(54px, 60px, $roboto-bold);
 }
 .display-4 {
-  @include font-line-family(48px, 54px, $roboto-bold);
+  @include text-size-family(48px, 54px, $roboto-bold);
 }
 
 h1 {
-  @include font-line-family(42px, 48px, $roboto-medium)
+  @include text-size-family(42px, 48px, $roboto-medium)
 }
 h2 {
-  @include font-line-family(36px, 42px, $roboto-medium);
+  @include text-size-family(36px, 42px, $roboto-medium);
 }
 h3 {
-  @include font-line-family(30px, 36px, $roboto-medium);
+  @include text-size-family(30px, 36px, $roboto-medium);
 }
 h4 {
-  @include font-line-family(24px, 30px, $roboto-medium);
+  @include text-size-family(24px, 30px, $roboto-medium);
 }
 h5 {
-  @include font-line-family(20px, 26px, $roboto-medium);
+  @include text-size-family(20px, 26px, $roboto-medium);
 }
 h6 {
-  @include font-line-family(18px, 24px, $roboto-medium);
+  @include text-size-family(18px, 24px, $roboto-medium);
 }
 
 .text-lg {
-  @include font-line-family(16px, 24px, $roboto-regular);
+  @include text-size-family(16px, 24px, $roboto-regular);
 }
 .text-base {
-  @include font-line-family(14px, 22px, $roboto-regular);
+  @include text-size-family(14px, 22px, $roboto-regular);
 }
 .text-sm {
-  @include font-line-family(13px, 18px, $roboto-regular);
+  @include text-size-family(13px, 18px, $roboto-regular);
 }
