@@ -1,0 +1,43 @@
+$gray-100: #f8f8f8;
+$gray-200: #ececec;
+$gray-300: #e1e1e1;
+$gray-400: #cecece;
+$gray-500: #aaaaaa;
+$gray-600: #88888c;
+$gray-700: #5f5e62;
+$gray-800: #3f3f41;
+$gray-900: #2a292d;
+
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900,
+);
+
+$crayola: #25ab6e;
+$amaranth: #af2e4e;
+
+$colors: (
+  "crayola": $crayola,
+  "amaranth": $amaranth,
+);
+
+$secondary: #6c757d;
+$light: #f8f9fa;
+$dark: #343a40;
+
+$theme-colors: (
+  "secondary": $secondary,
+  "light": $light,
+  "dark": $dark,
+  "crayola": $crayola,
+  "amaranth": $amaranth,
+);
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";

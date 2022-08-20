@@ -1,0 +1,74 @@
+.display-1 {
+  @include size-height-family(72px, 78px, $roboto-bold);
+}
+.display-2 {
+  @include size-height-family(60px, 66px, $roboto-bold);
+}
+.display-3 {
+  @include size-height-family(54px, 60px, $roboto-bold);
+}
+.display-4 {
+  @include size-height-family(48px, 54px, $roboto-bold);
+}
+
+h1 {
+  @include size-height-family(42px, 48px, $roboto-medium);
+}
+h2 {
+  @include size-height-family(36px, 42px, $roboto-medium);
+}
+h3 {
+  @include size-height-family(30px, 36px, $roboto-medium);
+}
+h4 {
+  @include size-height-family(24px, 30px, $roboto-medium);
+}
+h5 {
+  @include size-height-family(20px, 26px, $roboto-medium);
+}
+h6 {
+  @include size-height-family(18px, 24px, $roboto-medium);
+}
+
+.text-lg {
+  @include size-height-family(16px, 24px, $roboto-regular);
+}
+.text-base {
+  @include size-height-family(14px, 22px, $roboto-regular);
+}
+.text-sm {
+  @include size-height-family(13px, 18px, $roboto-regular);
+}
+
+.btn {
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+.btn-lg {
+  @include size-height-family(14px, 22px, $roboto-medium);
+  padding: 18px 36px;
+}
+.btn-sm {
+  @include size-height-family(13px, 18px, $roboto-bold);
+  padding: 14px 28px;
+}
+
+.input-group {
+  border-radius: 10px;
+  border: 1px solid $gray-300;
+  cursor: pointer;
+
+  @include hover-focus-active() {
+    border-color: $crayola;
+  }
+}
+.input-lg {
+  @include size-height-family(14px, 22px, $roboto-regular);
+  padding: 12px 12px;
+}
+.input-base {
+  @include size-height-family(13px, 18px, $roboto-regular);
+}
+.input-sm {
+  @include size-height-family(13px, 18px, $roboto-regular);
+}

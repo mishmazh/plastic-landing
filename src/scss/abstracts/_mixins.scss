@@ -1,5 +1,5 @@
-@mixin text-size-family($font-size, $line-height, $font-family) {
-  font-size: $font-size;
-  line-height: $line-height;
-  font-family: $font-family;
+@mixin size-height-family($size, $height, $family) {
+  font-size: $size;
+  line-height: $height;
+  font-family: $family;
 }
