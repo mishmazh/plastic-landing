@@ -11,11 +11,16 @@ module.exports = {
   mode,
   target,
   devtool,
+  devServer: {
+    port: 3000,
+    open: true,
+  },
   entry: path.resolve(__dirname, "src", "index.js"),
   output: {
     path: path.resolve(__dirname, "dist"),
     clean: true,
     filename: "[name].[contenthash].js",
+    assetModuleFilename: "assets/images/[hash][ext]",
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -38,6 +43,23 @@ module.exports = {
           "css-loader",
           "sass-loader",
         ],
+      },
+      {
+        test: /\.ttf/i,
+        type: "asset/resource",
+        generator: {
+          filename: "assets/fonts/[hash][ext]",
+        },
+      },
+      {
+        test: /\.m?js$/i,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
       },
     ],
   },
