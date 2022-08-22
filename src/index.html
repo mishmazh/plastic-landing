@@ -8,87 +8,208 @@
   </head>
   <body>
     <div>
-      <div class="background text-center text-white">
-        <div class="container h-100">
-          <div class="row align-items-center h-100">
+      <div class="hero-block text-center text-white">
+        <div class="container">
+          <h1 class="display-1 mb-2">ООО «ПСК»</h1>
+          <h3 class="font-roboto-regular mb-3">
+            Крупнейший производитель пластиковых и алюминиевых окон
+          </h3>
+          <h6 class="font-roboto-regular mb-5">
+            в Кировской и Свердловской области
+          </h6>
+          <div class="row mb-4">
             <div class="col">
-              <h1 class="display-3">ООО «ПСК»</h1>
-              <h5 class="">
-                Крупнейший производитель пластиковых и алюминиевых окон
-              </h5>
-              <p class="text-sm mb-3">в Кировской и Свердловской области</p>
-              <div class="row mb-3">
-                <div class="col mr-5 border text-sm">
-                  <span class="text-crayola">2008</span>Год основания компании
+              <div class="d-flex hero-block-border py-4 px-4">
+                <div class="display-4 text-crayola font-roboto-medium mr-3">
+                  2008
                 </div>
-                <div class="col mr-5 border">
-                  <span>4000</span>Квадратных метров производства
+                <div class="text-lg text-left mt-1">Год основания компании</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex hero-block-border py-4 px-4">
+                <div class="display-4 text-crayola font-roboto-medium mr-3">
+                  4000
                 </div>
-                <div class="col border">
-                  <span>500</span>Выпускаем стандартных конструкций в сутки
+                <div class="text-lg text-left mt-1">
+                  Квадратных метров производства
                 </div>
               </div>
-              <h4 class="mb-3">С завода всегда дешевле!</h4>
-              <button class="btn btn-crayola btn-lg">
-                Узнать стоимость своего окна
-              </button>
+            </div>
+            <div class="col">
+              <div class="d-flex hero-block-border py-4 px-4">
+                <div class="display-4 text-crayola font-roboto-medium mr-3">
+                  500
+                </div>
+                <div class="text-lg text-left mt-1">
+                  Выпускаем стандартных конструкций в сутки
+                </div>
+              </div>
             </div>
           </div>
+          <h2 class="font-roboto-regular mb-4">С завода всегда дешевле!</h2>
+          <button
+            class="btn btn-crayola btn-lg"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+          >
+            Узнать стоимость своего окна
+          </button>
         </div>
       </div>
-      <div class="border text-center">
+
+      <div class="quality-block text-center">
         <div class="container">
-          <h3>
+          <h1 class="mb-5">
             Почему у нас <br />
             <span class="text-crayola">низкие</span> цены и
             <span class="text-crayola">высокое</span> качество?
-          </h3>
-          <p class="text-sm">
+          </h1>
+          <p class="text-lg mb-5">
             Компания "ПСК" активно внедряет технологии бережливого производства
-            это позволяет добиться максимальной конкурентоспособности за счет
-            оптимизации всех производственных процессов
+            это позволяет добиться максимальной <br />
+            конкурентоспособности за счет оптимизации всех производственных
+            процессов
           </p>
-          <div class="d-flex justify-content-between">
-            <div>
-              <div></div>
-              <h6>Бережливое производство</h6>
-              <p class="text-sm">
+          <div class="row">
+            <div class="col">
+              <div class="quality-block-circle mx-auto mb-4">
+                <img
+                  src="assets/icons/advantages-1.svg"
+                  alt="quality-block-icon"
+                />
+              </div>
+              <h5 class="mb-3">Бережливое производство</h5>
+              <p class="text-lg">
                 Не тратим впустую ни одного рубля, ни одной секунды
               </p>
             </div>
-            <div>
-              <div></div>
-              <h6>Без наценки посредников</h6>
-              <p class="text-sm">
+            <div class="col">
+              <div class="quality-block-circle mx-auto mb-4">
+                <img
+                  src="assets/icons/advantages-2.svg"
+                  alt="quality-block-icon"
+                />
+              </div>
+              <h5 class="mb-3">Без наценки посредников</h5>
+              <p class="text-lg">
                 Предлагаем качественные окна напрямую от производителя
               </p>
             </div>
-            <div>
-              <div></div>
-              <h6>Автоматизация производства</h6>
-              <p class="text-sm">
+            <div class="col">
+              <div class="quality-block-circle mx-auto mb-4">
+                <img
+                  src="assets/icons/advantages-3.svg"
+                  alt="quality-block-icon"
+                />
+              </div>
+              <h5 class="mb-3">Автоматизация производства</h5>
+              <p class="text-lg">
                 Автоматические линии соответсвующие всем европейским стандартам
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="border">
-        <div class="container d-flex">
-          <div class="border w-50"></div>
-          <div class="border w-50 pl-2">
-            <h3 class="mb-4">
-              Приглашаем вас <span class="text-crayola">посетить</span> наше
-              <span class="text-crayola">производство</span>
-            </h3>
-            <p class="text-sm mb-4">
-              В рамках экскурсии вы сможете познакомиться с производством и
-              задать интересующие вопросы. Будем рады видеть вас в числе наших
-              гостей
-            </p>
-            <button class="btn btn-crayola btn-sm">
-              Записаться на экскурсию
-            </button>
+
+      <div class="tour-block container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="image-slider">
+                    <img src="assets/images/slider-image.jpg" alt="slide" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-slider">
+                    <img src="assets/images/slider-image.jpg" alt="slide" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-slider">
+                    <img src="assets/images/slider-image.jpg" alt="slide" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-slider">
+                    <img src="assets/images/slider-image.jpg" alt="slide" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="col">
+              <h1 class="mb-4">
+                Приглашаем вас <span class="text-crayola">посетить</span> наше
+                <span class="text-crayola">производство</span>
+              </h1>
+              <p class="text-lg mb-4">
+                В рамках экскурсии вы сможете познакомиться с производством и
+                задать интересующие вопросы. Будем рады видеть вас в числе наших
+                гостей
+              </p>
+              <button class="btn btn-crayola btn-base">
+                Записаться на экскурсию
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="exampleModalCenter"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="cross-block">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <img src="assets/icons/cross.svg" alt="cross" />
+              </button>
+            </div>
+            <div class="modal-body text-center">
+              <h3 class="mb-4">Узнать стоимость окна</h3>
+              <p class="text-secondary mb-4">
+                Оставьте контактные данные и наш специалист перезвонит Вам в
+                течение 15 минут
+              </p>
+              <input
+                class="input-group input-base mb-4"
+                type="text"
+                placeholder="Ваше имя"
+              />
+              <input
+                class="input-group input-base mb-4"
+                type="text"
+                placeholder="Ваш телефон"
+              />
+              <button class="btn btn-crayola btn-base w-100 mb-4" type="submit">
+                Отправить заявку
+              </button>
+              <p class="text-sm text-secondary">
+                Нажимая кнопку "Отправить заявку", Вы даёте согласие на
+                обработку персональных данных и соглашаетесь с
+                <span class="text-crayola cursor-pointer"
+                  >политикой конфиденциальности</span
+                >.
+              </p>
+            </div>
           </div>
         </div>
       </div>

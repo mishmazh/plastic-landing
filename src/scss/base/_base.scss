@@ -1,81 +1,183 @@
-.display-1 {
-  @include size-height-family(72px, 78px, $roboto-bold);
-}
-.display-2 {
-  @include size-height-family(60px, 66px, $roboto-bold);
-}
-.display-3 {
-  @include size-height-family(54px, 60px, $roboto-bold);
-}
-.display-4 {
-  @include size-height-family(48px, 54px, $roboto-bold);
+.container-fluid {
+  width: 85%;
 }
 
-h1 {
-  @include size-height-family(42px, 48px, $roboto-medium);
+.cursor-pointer {
+  cursor: pointer;
 }
-h2 {
-  @include size-height-family(36px, 42px, $roboto-medium);
+
+.font-roboto-medium {
+  font-family: $roboto-medium;
 }
-h3 {
-  @include size-height-family(30px, 36px, $roboto-medium);
+
+.font-roboto-regular {
+  font-family: $roboto-regular;
 }
-h4 {
-  @include size-height-family(24px, 30px, $roboto-medium);
+
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  font-family: $roboto-bold;
 }
-h5 {
-  @include size-height-family(20px, 26px, $roboto-medium);
-}
+
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
-  @include size-height-family(18px, 24px, $roboto-medium);
+  font-family: $roboto-medium;
 }
 
 .text-lg {
-  @include size-height-family(16px, 24px, $roboto-regular);
+  font-size: 16px;
 }
-.text-base {
-  @include size-height-family(14px, 22px, $roboto-regular);
-}
+
 .text-sm {
-  @include size-height-family(13px, 18px, $roboto-regular);
+  font-size: 13px;
 }
 
 .btn {
   text-transform: uppercase;
   border-radius: 10px;
+  padding: 0;
 }
+
 .btn-lg {
-  @include size-height-family(14px, 22px, $roboto-medium);
-  padding: 18px 36px;
+  @include size-height-family(16px, 22px, $roboto-bold);
+  height: 66px;
+  padding: 0 50px;
 }
+
+.btn-base {
+  @include size-height-family(14px, 22px, $roboto-bold);
+  height: 54px;
+  padding: 0 40px;
+}
+
 .btn-sm {
-  @include size-height-family(11px, 18px, $roboto-bold);
-  padding: 14px 30px 12px;
+  @include size-height-family(14px, 18px, $roboto-bold);
+  height: 42px;
+  padding: 0 30px;
 }
 
 .input-group {
   border-radius: 10px;
-  border: 1px solid $gray-300;
+  border: 1px solid $gray-400;
   cursor: pointer;
 
   @include hover-focus-active() {
     border-color: $crayola;
   }
 }
+
 .input-lg {
-  @include size-height-family(14px, 22px, $roboto-regular);
-  padding: 12px 12px;
-}
-.input-base {
-  @include size-height-family(13px, 18px, $roboto-regular);
-}
-.input-sm {
-  @include size-height-family(13px, 18px, $roboto-regular);
+  font-size: 16px;
+  height: 66px;
+  padding: 0 18px;
 }
 
-.background {
+.input-base {
+  font-size: 14px;
+  height: 54px;
+  padding: 0 18px;
+}
+
+.input-sm {
+  font-size: 14px;
+  height: 42px;
+  padding: 0 18px;
+}
+
+.hero-block {
   background-image: url("assets/images/background.jpg");
   background-size: cover;
   background-position: center;
-  height: 730px;
+  padding: 145px 0 140px;
+}
+
+.hero-block-border {
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.quality-block {
+  padding: 120px 0 109px;
+}
+
+.quality-block-circle {
+  @include width-height(95px);
+  background-color: $crayola;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 15px $rgba-crayola;
+
+  img {
+    @include width-height(36px);
+  }
+}
+
+.tour-block {
+  background-color: $gray-100;
+  padding: 120px 0 80px;
+  border-radius: 10px;
+}
+
+// ---------- swiper ---------- //
+.image-slider {
+  @include width-height(540px, 350px);
+
+  img {
+    width: 410px;
+    border-radius: 10px;
+    margin-left: 72px;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  border: 2px solid $crayola;
+  padding: 0 20px;
+  border-radius: 50%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.swiper-button-prev::after {
+  background-image: url("assets/icons/arrow-left.svg");
+  background-size: 18px 15px;
+}
+
+.swiper-button-next::after {
+  background-image: url("assets/icons/arrow-right.svg");
+  background-size: 18px 19px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: $amaranth;
+}
+
+// ---------- modal ---------- //
+.modal-lg {
+  width: 540px;
+}
+
+.cross-block {
+  padding: 20px;
+
+  button {
+    width: 16px;
+  }
+}
+
+.modal-body {
+  padding: 0 48px 54px;
 }

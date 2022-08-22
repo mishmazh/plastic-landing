@@ -40,6 +40,25 @@ $theme-colors: (
   "amaranth": $amaranth,
 );
 
+$font-family-base: $roboto-regular;
+
+$font-size-base: 0.875rem;
+$font-size-lg: 1rem;
+$font-size-sm: 0.8125rem;
+
+$h1-font-size: 42px;
+$h2-font-size: 36px;
+$h3-font-size: 30px;
+$h4-font-size: 24px;
+$h5-font-size: 20px;
+$h6-font-size: 18px;
+
+$display1-size: 72px;
+$display2-size: 60px;
+$display3-size: 54px;
+$display4-size: 48px;
+$display-line-height: 1.1;
+
 $sizes: (
   200: 300px,
   500: 500px,

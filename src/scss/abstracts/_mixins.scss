@@ -3,3 +3,8 @@
   line-height: $height;
   font-family: $family;
 }
+
+@mixin width-height($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
