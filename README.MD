@@ -1,5 +1,5 @@
 # Plastic landing
-![show-app-up](assets/images/github/show-app-up.png)
+![show-app-up](src/assets/images/github/show-app-up.png)
 
 ## Functional:
 Simple landing with 3 blocks and one modal window.
@@ -11,4 +11,4 @@ Simple landing with 3 blocks and one modal window.
 4. Swiper
 
 ***
-![show-app-bottom](assets/images/github/show-app-bottom.png)
+![show-app-bottom](src/assets/images/github/show-app-bottom.png)
