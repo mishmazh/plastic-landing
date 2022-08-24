@@ -10,7 +10,7 @@ new Swiper(".swiper", {
   modules: [Navigation, Pagination],
   loop: true,
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
   },
   navigation: {
